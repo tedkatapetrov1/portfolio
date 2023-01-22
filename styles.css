@@ -1,0 +1,138 @@
+html {
+    scroll-padding-top: 40px;
+}
+
+
+body {
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+    margin-left: 20px;
+    background-color: aliceblue;
+    line-height: 1.2;
+}
+
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+#button {
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 550px;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+nav {
+    background-color: orange;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+nav * {
+    display: inline;
+}
+
+nav li {
+    margin: 20px;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav li i {
+    position: absolute;
+    right: -5;
+    margin-left: 430px;
+    cursor: pointer;
+}
+
+nav li a:hover {
+    color: blue;
+}
+
+
+li {
+    margin: 0 0 15px 0;
+    text-decoration: none;
+
+}
+
+h1 {
+    font-size: 28px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer {
+    background-color: orange;
+    text-align: center;
+    font-size: 22px;
+}
